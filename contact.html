@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0E0D0B" />
+  <title>Contact — The Insiders' Story</title>
+  <meta name="description" content="Begin your design journey with The Insiders' Story. A boutique interior design studio led by Tanya Chachra." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F5F1EA'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-family='Cormorant Garamond, serif' font-size='42' font-style='italic' fill='%231C1A17'%3ET%3C/text%3E%3C/svg%3E" />
+</head>
+<body data-page="contact">
+
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__mark">T</span>
+      <span class="preloader__line"></span>
+      <span class="preloader__label">Contact</span>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo" aria-label="The Insiders' Story home">
+      <span class="nav__logo-mark">T</span>
+      <span class="nav__logo-text">The Insiders' Story</span>
+    </a>
+    <nav class="nav__menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">Studio</a>
+      <a href="process.html">Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="nav__cta magnetic" data-magnetic="0.25">
+      <span>Begin Journey</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">Studio</a>
+      <a href="process.html">Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- FULL-WIDTH BANNER -->
+    <section class="page-hero" style="min-height:60vh;">
+      <div class="page-hero__media">
+        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2400&q=80" alt="The Insiders' Story studio" data-parallax="0.04" />
+        <div class="page-hero__overlay"></div>
+      </div>
+      <div class="page-hero__content">
+        <p class="page-hero__eyebrow reveal" data-reveal="up">Begin Your Design Journey</p>
+        <h1 class="page-hero__title reveal" data-reveal="up" style="font-size:clamp(3rem, 8vw, 7rem);">
+          Begin your <em>design journey</em>.
+        </h1>
+        <p class="page-hero__sub reveal" data-reveal="up" data-delay="200">
+          We accept a small number of new projects each year, by introduction or invitation. The first conversation is always at no cost, and entirely without obligation.
+        </p>
+      </div>
+    </section>
+
+    <!-- MAIN CONTACT LAYOUT -->
+    <section class="contact-page">
+
+      <!-- LEFT: FORM + DETAILS -->
+      <div>
+        <p class="contact-page__eyebrow reveal" data-reveal="up">Tell us about the space — and the life inside it</p>
+        <p class="contact-page__intro reveal" data-reveal="up">
+          Tanya reads every enquiry personally. To help us prepare for our first conversation, please share a few details about the project and the household.
+        </p>
+
+        <form class="contact-form" id="contactPageForm" novalidate>
+          <div class="form__row">
+            <label class="form__field"><span>Full name *</span><input type="text" name="name" required autocomplete="name" /></label>
+            <label class="form__field"><span>Email address *</span><input type="email" name="email" required autocomplete="email" /></label>
+          </div>
+          <div class="form__row">
+            <label class="form__field"><span>Phone (optional)</span><input type="tel" name="phone" autocomplete="tel" /></label>
+            <label class="form__field"><span>City</span><input type="text" name="city" autocomplete="address-level2" /></label>
+          </div>
+          <div class="form__row">
+            <label class="form__field">
+              <span>Project type *</span>
+              <select name="type" required>
+                <option value="">Select one</option>
+                <option>Full Residence</option>
+                <option>Apartment</option>
+                <option>Villa</option>
+                <option>Single Room</option>
+                <option>Consultation</option>
+                <option>Commercial</option>
+              </select>
+            </label>
+            <label class="form__field">
+              <span>Approximate timeline</span>
+              <select name="timeline" required>
+                <option value="">Select</option>
+                <option>Immediate (within 3 months)</option>
+                <option>This year</option>
+                <option>Next year</option>
+                <option>Exploring — no fixed timeline</option>
+              </select>
+            </label>
+          </div>
+          <label class="form__field">
+            <span>Tell us about the space — and the life inside it *</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <label class="contact-form__consent">
+            <input type="checkbox" checked required />
+            <span>I understand that Tanya will read this personally and reply within two working days.</span>
+          </label>
+          <button type="submit" class="btn btn--dark form__submit magnetic" data-magnetic="0.3">
+            <span>Send Enquiry</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+          <p class="form__note" id="contactPageNote" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- RIGHT: INFO CARDS + MAP -->
+      <aside class="contact-side">
+        <div class="contact-card-map reveal" data-reveal="up">
+          <div class="contact-card-map__map">
+            <img src="https://images.unsplash.com/photo-1577086664693-894d8405334a?auto=format&fit=crop&w=1200&q=60" alt="Studio location — Mehrauli, New Delhi" style="width:100%; height:100%; object-fit:cover; filter:saturate(0.7);" loading="lazy" />
+          </div>
+          <div class="contact-card-map__body">
+            <h3>Visit the studio</h3>
+            <p>
+              By appointment only.<br />
+              Mehrauli, New Delhi<br />
+              India
+            </p>
+            <a href="https://maps.google.com/?q=Mehrauli+New+Delhi" target="_blank" rel="noopener" class="contact__maplink">
+              Open in Google Maps
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__card contact__card--dark reveal" data-reveal="up">
+          <h3>Speak with us</h3>
+          <p>
+            <a href="tel:+919821970058">+91 98219 70058</a><br />
+            <a href="mailto:hello@theinsidersstory.com">hello@theinsidersstory.com</a>
+          </p>
+          <a class="contact__whatsapp" href="https://wa.me/919821970058?text=Hello%2C%20I'd%20like%20to%20discuss%20a%20project%20with%20The%20Insiders'%20Story" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12a11.94 11.94 0 001.64 6L0 24l6.18-1.62A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.19-1.25-6.21-3.48-8.52zM12 21.82a9.82 9.82 0 01-5-1.36l-.36-.21-3.66.96.98-3.57-.23-.37A9.82 9.82 0 1112 21.82zm5.39-7.36c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="contact__card contact__card--soft reveal" data-reveal="up">
+          <h3>Studio hours</h3>
+          <p>
+            Monday — Friday: 10 am — 7 pm<br />
+            Saturday: By appointment<br />
+            Sunday: Closed
+          </p>
+        </div>
+
+        <div class="contact__card reveal" data-reveal="up">
+          <h3>Follow the studio</h3>
+          <div class="contact__socials">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Pinterest">Pinterest</a>
+            <a href="#" aria-label="Vimeo">Vimeo</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="process-cta" style="margin-top: 4rem;">
+      <div class="process-cta__inner">
+        <p class="section-eyebrow" style="color:var(--clay); margin-bottom:1.2rem;"><span style="color:var(--clay);">Before you write</span></p>
+        <h2 class="process-cta__title reveal" data-reveal="up">
+          A note from <em>Tanya</em>
+        </h2>
+        <p class="process-cta__sub reveal" data-reveal="up" style="max-width:700px; margin:0 auto;">
+          I read every enquiry personally. A home is too important to be anything but personal from the very first message.<br />
+          I look forward to hearing about the space, the people, and the feeling you want to come home to.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <p class="footer__mantra">
+        <span>“</span> A home is a quiet autobiography written in light, texture, and time. <span>”</span>
+      </p>
+    </div>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <span class="footer__logo">The Insiders' Story</span>
+        <p>Boutique interior design studio, est. 2011.</p>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">Studio</span>
+        <a href="about.html">About</a>
+        <a href="process.html">Process</a>
+        <a href="about.html#story">The Name</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">Work</span>
+        <a href="projects.html">All Projects</a>
+        <a href="projects.html?cat=Residential">Residential</a>
+        <a href="projects.html?cat=Commercial">Commercial</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">Connect</span>
+        <a href="https://wa.me/919821970058" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:hello@theinsidersstory.com">Email</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 The Insiders' Story. All rights reserved.</span>
+      <span>Crafted with care in New Delhi.</span>
+    </div>
+  </footer>
+
+  <script src="site.js" defer></script>
+  <script src="contact.js" defer></script>
+</body>
+</html>

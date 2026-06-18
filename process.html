@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0E0D0B" />
+  <title>Process — The Insiders' Story</title>
+  <meta name="description" content="Discover, Concept, Design, Transform. The four-stage process behind every The Insiders' Story interior." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F5F1EA'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-family='Cormorant Garamond, serif' font-size='42' font-style='italic' fill='%231C1A17'%3ET%3C/text%3E%3C/svg%3E" />
+</head>
+<body data-page="process">
+
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__mark">T</span>
+      <span class="preloader__line"></span>
+      <span class="preloader__label">Process</span>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo" aria-label="The Insiders' Story home">
+      <span class="nav__logo-mark">T</span>
+      <span class="nav__logo-text">The Insiders' Story</span>
+    </a>
+    <nav class="nav__menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">Studio</a>
+      <a href="process.html">Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="nav__cta magnetic" data-magnetic="0.25">
+      <span>Begin Journey</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">Studio</a>
+      <a href="process.html">Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="process-hero">
+      <p class="process-hero__eyebrow reveal" data-reveal="up">The Process</p>
+      <h1 class="process-hero__title reveal" data-reveal="up">
+        Four movements, <em>one quiet composition</em>.
+      </h1>
+      <p class="process-hero__sub reveal" data-reveal="up" data-delay="100">
+        Every The Insiders' Story project moves through four stages. Each is unhurried, deliberate, and built on a long conversation. From the first visit to the final styling, the studio stays personally involved.
+      </p>
+    </section>
+
+    <!-- STICKY PROGRESS -->
+    <div class="process-progress">
+      <div class="process-progress__inner">
+        <span class="process-progress__label">Now</span>
+        <div class="process-progress__track" id="progressTrack">
+          <div class="process-progress__bar" id="progressBar"></div>
+          <div class="process-progress__step" data-step="1" style="left: 0%;"><span class="process-progress__num">01 · Discover</span></div>
+          <div class="process-progress__step" data-step="2" style="left: 33.333%;"><span class="process-progress__num">02 · Imagine</span></div>
+          <div class="process-progress__step" data-step="3" style="left: 66.666%;"><span class="process-progress__num">03 · Create</span></div>
+          <div class="process-progress__step" data-step="4" style="left: 100%;"><span class="process-progress__num">04 · Transform</span></div>
+        </div>
+        <span class="process-progress__label" id="progressNow" style="min-width:140px; text-align:right;">—</span>
+      </div>
+    </div>
+
+    <!-- STAGES -->
+    <div class="process-stages" id="processStages">
+
+      <article class="process-stage" data-step="1">
+        <div class="process-stage__media">
+          <span class="process-stage__num">01</span>
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=80" alt="Discover — conversation" loading="lazy" data-parallax="0.05" />
+        </div>
+        <div class="process-stage__content">
+          <p class="process-stage__eyebrow">Weeks 1 — 4</p>
+          <h2 class="process-stage__title">Discover</h2>
+          <div class="process-stage__body">
+            <p>
+              The studio begins every project with a long, unhurried conversation. We visit the home, walk the neighbourhood, and listen. We ask about the people who will live there, the rituals that shape a day, the small, almost unspoken things.
+            </p>
+            <p>
+              We photograph the space in every kind of light. We draw by hand. We collect fragments — a swatch of fabric, a corner of a tile, a piece of bark from the garden. The brief is written in collaboration with the client, and refined over many weeks.
+            </p>
+            <ul class="process-stage__list">
+              <li><strong>Visit</strong><span>Two on-site visits, including one at dusk.</span></li>
+              <li><strong>Interview</strong><span>A long, recorded conversation with the household.</span></li>
+              <li><strong>Brief</strong><span>A written document we refine together.</span></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="process-stage" data-step="2">
+        <div class="process-stage__media">
+          <span class="process-stage__num">02</span>
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=80" alt="Concept — sketches and materials" loading="lazy" data-parallax="0.05" />
+        </div>
+        <div class="process-stage__content">
+          <p class="process-stage__eyebrow">Weeks 5 — 10</p>
+          <h2 class="process-stage__title">Imagine</h2>
+          <div class="process-stage__body">
+            <p>
+              From the brief, we build a world. Hand sketches become plans. Plans become sections. Sections become mood boards — collections of materials, light, and reference imagery that show, more clearly than words, the feeling we are working toward.
+            </p>
+            <p>
+              We present the concept in the client's home, often over a long lunch. We revise together. We argue gently. By the end of this stage, the project has a clear spatial narrative — a sense of how the rooms will unfold, what they will feel like at different hours, and how they will age.
+            </p>
+            <ul class="process-stage__list">
+              <li><strong>Sketches</strong><span>Hand-drawn plans, sections, and perspectives.</span></li>
+              <li><strong>Mood boards</strong><span>Material, light, and reference studies.</span></li>
+              <li><strong>Layout</strong><span>Finalised spatial narrative, signed off together.</span></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="process-stage" data-step="3">
+        <div class="process-stage__media">
+          <span class="process-stage__num">03</span>
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80" alt="Design — material and detail" loading="lazy" data-parallax="0.05" />
+        </div>
+        <div class="process-stage__content">
+          <p class="process-stage__eyebrow">Weeks 11 — 24</p>
+          <h2 class="process-stage__title">Create</h2>
+          <div class="process-stage__body">
+            <p>
+              The concept becomes a working drawing set. We visit quarries, ateliers, and workshops, often many times, to source and refine every material. We prototype at full scale — a joinery detail, a wall finish, a piece of furniture — in the studio or on site.
+            </p>
+            <p>
+              The site work begins. The studio coordinates a small, trusted team of craftspeople, and Tanya is personally present on site every week. Decisions that cannot be made on paper are made in the room, in real light, with the people who will live with the result.
+            </p>
+            <ul class="process-stage__list">
+              <li><strong>Drawings</strong><span>Full working set, including joinery and lighting.</span></li>
+              <li><strong>Sourcing</strong><span>Hand-selection of every material.</span></li>
+              <li><strong>Build</strong><span>On-site work, supervised personally by Tanya.</span></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="process-stage" data-step="4">
+        <div class="process-stage__media">
+          <span class="process-stage__num">04</span>
+          <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1400&q=80" alt="Transform — finished interior" loading="lazy" data-parallax="0.05" />
+        </div>
+        <div class="process-stage__content">
+          <p class="process-stage__eyebrow">Weeks 25 — 36</p>
+          <h2 class="process-stage__title">Transform</h2>
+          <div class="process-stage__body">
+            <p>
+              The final stage is the most unhurried. We style the home with the household — flowers, books, the small, particular objects that make a room a home. We adjust the lighting for different times of day. We sit in the rooms, in silence, until the space feels inevitable.
+            </p>
+            <p>
+              When the project is handed over, it is not the end of the conversation. The studio returns at six months, a year, and beyond — to revisit the home, adjust the small things, and ensure the work continues to settle well over time.
+            </p>
+            <ul class="process-stage__list">
+              <li><strong>Styling</strong><span>Final layering of objects, art, and textiles.</span></li>
+              <li><strong>Handover</strong><span>A long walk-through, in every light.</span></li>
+              <li><strong>Stewardship</strong><span>Return visits, indefinitely, by arrangement.</span></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- CTA -->
+    <section class="process-cta">
+      <div class="process-cta__inner">
+        <p class="section-eyebrow" style="color:var(--clay); margin-bottom:1.2rem;"><span style="color:var(--clay);">Continue the conversation</span></p>
+        <h2 class="process-cta__title reveal" data-reveal="up">
+          Ready to <em>begin</em>?
+        </h2>
+        <p class="process-cta__sub reveal" data-reveal="up">
+          We accept a small number of new projects each year, by introduction or invitation. The first conversation is always at no cost, and entirely without obligation.
+        </p>
+        <a href="contact.html" class="btn btn--light magnetic" data-magnetic="0.3">
+          <span>Begin Your Design Journey</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <p class="footer__mantra">
+        <span>“</span> A home is a quiet autobiography written in light, texture, and time. <span>”</span>
+      </p>
+    </div>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <span class="footer__logo">The Insiders' Story</span>
+        <p>Boutique interior design studio, est. 2011.</p>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">Studio</span>
+        <a href="about.html">About</a>
+        <a href="process.html">Process</a>
+        <a href="about.html#story">The Name</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">Work</span>
+        <a href="projects.html">All Projects</a>
+        <a href="projects.html?cat=Residential">Residential</a>
+        <a href="projects.html?cat=Commercial">Commercial</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">Connect</span>
+        <a href="https://wa.me/919821970058" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:hello@theinsidersstory.com">Email</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 The Insiders' Story. All rights reserved.</span>
+      <span>Crafted with care in New Delhi.</span>
+    </div>
+  </footer>
+
+  <script src="site.js" defer></script>
+  <script src="process.js" defer></script>
+</body>
+</html>

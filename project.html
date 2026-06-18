@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0E0D0B" />
+  <title>Project — The Insiders' Story</title>
+  <meta name="description" content="A case study by The Insiders' Story — boutique interior design studio led by Tanya Chachra." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F5F1EA'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-family='Cormorant Garamond, serif' font-size='42' font-style='italic' fill='%231C1A17'%3ET%3C/text%3E%3C/svg%3E" />
+</head>
+<body data-page="project-detail">
+
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__mark">T</span>
+      <span class="preloader__line"></span>
+      <span class="preloader__label">Loading Project</span>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo" aria-label="The Insiders' Story home">
+      <span class="nav__logo-mark">T</span>
+      <span class="nav__logo-text">The Insiders' Story</span>
+    </a>
+    <nav class="nav__menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">Studio</a>
+      <a href="process.html">Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="nav__cta magnetic" data-magnetic="0.25">
+      <span>Begin Journey</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">Studio</a>
+      <a href="process.html">Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <main id="projectRoot">
+    <!-- Filled by project.js -->
+    <div style="min-height:80vh; display:grid; place-items:center;">
+      <p style="font-family: var(--serif); font-style:italic; color: var(--umber); font-size: 1.4rem;">Loading project…</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <p class="footer__mantra">
+        <span>“</span> A home is a quiet autobiography written in light, texture, and time. <span>”</span>
+      </p>
+    </div>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <span class="footer__logo">The Insiders' Story</span>
+        <p>Boutique interior design studio, est. 2011.</p>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">Studio</span>
+        <a href="about.html">About</a>
+        <a href="process.html">Process</a>
+        <a href="about.html#story">The Name</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">Work</span>
+        <a href="projects.html">All Projects</a>
+        <a href="projects.html?cat=Residential">Residential</a>
+        <a href="projects.html?cat=Commercial">Commercial</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">Connect</span>
+        <a href="https://wa.me/919821970058" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:hello@theinsidersstory.com">Email</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 The Insiders' Story. All rights reserved.</span>
+      <span>Crafted with care in New Delhi.</span>
+    </div>
+  </footer>
+
+  <script src="site.js" defer></script>
+  <script src="projects-data.js" defer></script>
+  <script src="project.js" defer></script>
+</body>
+</html>
